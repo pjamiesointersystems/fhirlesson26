@@ -1,0 +1,41 @@
+GET http://127.0.0.1:8080/csp/healthshare/demo/fhir/r4/metadata
+Authorization: Basic _System:ISCDEMO
+Accept: */*
+content-type: application/fhir+json
+Connection: close
+Accept-Encoding: gzip, deflate, br
+Prefer: return=representation
+###
+GET http://127.0.0.1:8080/csp/healthshare/demo/fhir/r4/Patient?name=Mann
+Authorization: Basic _System:ISCDEMO
+Accept: */*
+content-type: application/fhir+json
+Connection: close
+Accept-Encoding: gzip, deflate, br
+Prefer: return=representation
+###
+GET http://127.0.0.1:8080/csp/healthshare/demo/fhir/r4/Patient?_id=3&_revinclude=Observation:subject
+Authorization: Basic _System:ISCDEMO
+Accept: */*
+content-type: application/fhir+json
+Connection: close
+Accept-Encoding: gzip, deflate, br
+Prefer: return=representation
+###
+GET http://127.0.0.1:8080/csp/healthshare/demo/fhir/r4/Observation/70027
+Authorization: Basic _System:ISCDEMO
+Accept: */*
+content-type: application/fhir+json
+Connection: close
+Accept-Encoding: gzip, deflate, br
+Prefer: return=representation
+###
+###
+GET http://127.0.0.1:8080/csp/healthshare/demo/fhir/r4/Patient/2/$everything
+Authorization: Basic _System:ISCDEMO
+Accept: */*
+content-type: application/fhir+json
+Connection: close
+Accept-Encoding: gzip, deflate, br
+Prefer: return=representation
+###

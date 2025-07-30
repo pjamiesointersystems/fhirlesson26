@@ -96,5 +96,5 @@ def insert_cvx_codes(csv_path):
 
 
 if __name__ == "__main__":
-    #cvstable()
+    cvstable()
     insert_cvx_codes("web_cvx.csv")  # Adjust the path to your CSV file

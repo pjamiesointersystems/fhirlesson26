@@ -131,14 +131,14 @@ def run_agent(user_question: str):
     {
         "role": "assistant",
         "content": (
-            "Thought: I need to find John Smith in the patient records.\n"
+            "Thought: I need to find Susan Mann in the patient records.\n"
             "Action: GetPatientByName\n"
-            "Action Input: John Smith"
+            "Action Input: Susan Mann"
         )
     },
     {
         "role": "user",
-        "content": "Observation: [{\"id\": \"123\", \"name\": \"John Smith\"}]"
+        "content": "Observation: [{\"id\": \"123\", \"name\": \"Susan Mann\"}]"
     },
     {
         "role": "assistant",
